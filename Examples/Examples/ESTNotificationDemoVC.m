@@ -8,6 +8,7 @@
 
 #import "ESTNotificationDemoVC.h"
 #import "ESTBeaconManager.h"
+#import <Parse/Parse.h>
 
 @interface ESTNotificationDemoVC () <ESTBeaconManagerDelegate>
 
@@ -37,7 +38,7 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-
+    
     /*
      * UI setup
      */
@@ -67,7 +68,7 @@
     infoTextView.text = @"Lock the screen and go far away from the beacon until you get the exit region notification. If you come back, you will see an enter region notification.";
     [self.view addSubview:infoTextView];
     
-     
+    
     /*
      * BeaconManager setup.
      */
@@ -88,18 +89,34 @@
 
 - (void)beaconManager:(ESTBeaconManager *)manager didEnterRegion:(ESTBeaconRegion *)region
 {
-    UILocalNotification *notification = [UILocalNotification new];
-    notification.alertBody = @"Enter region notification";
+//    UILocalNotification *notification = [UILocalNotification new];
+//    notification.alertBody = @"Enter region notification";
+//    
+//    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+
+    // Create our Installation query
+    PFQuery *pushQuery = [PFInstallation query];
+    [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
     
-    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+    // Send push notification to query
+    [PFPush sendPushMessageToQueryInBackground:pushQuery
+                                   withMessage:@"Enter Region! From Parse"];
 }
 
 - (void)beaconManager:(ESTBeaconManager *)manager didExitRegion:(ESTBeaconRegion *)region
 {
-    UILocalNotification *notification = [UILocalNotification new];
-    notification.alertBody = @"Exit region notification";
+//    UILocalNotification *notification = [UILocalNotification new];
+//    notification.alertBody = @"Exit region notification";
+//    
+//    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+
+    // Create our Installation query
+    PFQuery *pushQuery = [PFInstallation query];
+    [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
     
-    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+    // Send push notification to query
+    [PFPush sendPushMessageToQueryInBackground:pushQuery
+                                   withMessage:@"Exit Region! From Parse"];
 }
 
 #pragma mark -

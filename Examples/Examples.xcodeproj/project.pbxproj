@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510766C5192067D900D5F035 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510766C4192067D900D5F035 /* Parse.framework */; };
+		510766C71920682400D5F035 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510766C61920682400D5F035 /* AudioToolbox.framework */; };
+		510766C91920682B00D5F035 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510766C81920682B00D5F035 /* CFNetwork.framework */; };
+		510766CB1920685B00D5F035 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 510766CA1920685A00D5F035 /* libz.dylib */; };
+		510766CD1920686A00D5F035 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510766CC1920686A00D5F035 /* MobileCoreServices.framework */; };
+		510766CF1920687300D5F035 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510766CE1920687300D5F035 /* QuartzCore.framework */; };
+		510766D11920687D00D5F035 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510766D01920687D00D5F035 /* Security.framework */; };
+		510766D31920689200D5F035 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510766D21920689200D5F035 /* StoreKit.framework */; };
+		51A33DBA1900F1F4000D1E1A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A33DB91900F1F4000D1E1A /* CoreBluetooth.framework */; };
+		51A33DBC1900F201000D1E1A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A33DBB1900F201000D1E1A /* CoreLocation.framework */; };
 		AC39C3BE18D72A6F00B38212 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC39C3BD18D72A6F00B38212 /* Foundation.framework */; };
 		AC39C3C018D72A6F00B38212 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC39C3BF18D72A6F00B38212 /* CoreGraphics.framework */; };
 		AC39C3C218D72A6F00B38212 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC39C3C118D72A6F00B38212 /* UIKit.framework */; };
@@ -38,6 +48,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		510766C4192067D900D5F035 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		510766C61920682400D5F035 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		510766C81920682B00D5F035 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		510766CA1920685A00D5F035 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		510766CC1920686A00D5F035 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		510766CE1920687300D5F035 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		510766D01920687D00D5F035 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		510766D21920689200D5F035 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		51A33DB91900F1F4000D1E1A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		51A33DBB1900F201000D1E1A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		881698037D044D79882430C0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		9E416607063449DD80A083D0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC39C3BA18D72A6F00B38212 /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC39C3BD18D72A6F00B38212 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AC39C3BF18D72A6F00B38212 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -72,9 +94,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC39C3F818D7319500B38212 /* SystemConfiguration.framework in Frameworks */,
-				AC39C3F618D7316B00B38212 /* libEstimoteSDK.a in Frameworks */,
+				510766D31920689200D5F035 /* StoreKit.framework in Frameworks */,
+				510766D11920687D00D5F035 /* Security.framework in Frameworks */,
+				510766CF1920687300D5F035 /* QuartzCore.framework in Frameworks */,
+				510766CD1920686A00D5F035 /* MobileCoreServices.framework in Frameworks */,
+				510766CB1920685B00D5F035 /* libz.dylib in Frameworks */,
+				51A33DBC1900F201000D1E1A /* CoreLocation.framework in Frameworks */,
 				AC39C3C018D72A6F00B38212 /* CoreGraphics.framework in Frameworks */,
+				510766C91920682B00D5F035 /* CFNetwork.framework in Frameworks */,
+				510766C71920682400D5F035 /* AudioToolbox.framework in Frameworks */,
+				51A33DBA1900F1F4000D1E1A /* CoreBluetooth.framework in Frameworks */,
+				AC39C3F618D7316B00B38212 /* libEstimoteSDK.a in Frameworks */,
 				AC39C3C218D72A6F00B38212 /* UIKit.framework in Frameworks */,
+				510766C5192067D900D5F035 /* Parse.framework in Frameworks */,
 				AC39C3BE18D72A6F00B38212 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +130,7 @@
 				AC39C3C318D72A6F00B38212 /* Examples */,
 				AC39C3BC18D72A6F00B38212 /* Frameworks */,
 				AC39C3BB18D72A6F00B38212 /* Products */,
+				881698037D044D79882430C0 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,12 +146,23 @@
 		AC39C3BC18D72A6F00B38212 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				510766D21920689200D5F035 /* StoreKit.framework */,
+				510766D01920687D00D5F035 /* Security.framework */,
+				510766CE1920687300D5F035 /* QuartzCore.framework */,
+				510766CC1920686A00D5F035 /* MobileCoreServices.framework */,
+				510766CA1920685A00D5F035 /* libz.dylib */,
+				510766C81920682B00D5F035 /* CFNetwork.framework */,
+				510766C61920682400D5F035 /* AudioToolbox.framework */,
+				510766C4192067D900D5F035 /* Parse.framework */,
+				51A33DBB1900F201000D1E1A /* CoreLocation.framework */,
+				51A33DB91900F1F4000D1E1A /* CoreBluetooth.framework */,
 				AC39C3F718D7319500B38212 /* SystemConfiguration.framework */,
 				AC39C3F518D7316A00B38212 /* libEstimoteSDK.a */,
 				AC39C3BD18D72A6F00B38212 /* Foundation.framework */,
 				AC39C3BF18D72A6F00B38212 /* CoreGraphics.framework */,
 				AC39C3C118D72A6F00B38212 /* UIKit.framework */,
 				AC39C3DC18D72A6F00B38212 /* XCTest.framework */,
+				9E416607063449DD80A083D0 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC39C3EC18D72A6F00B38212 /* Build configuration list for PBXNativeTarget "Examples" */;
 			buildPhases = (
+				05D8ECFE3A2B4B83A36C5366 /* Check Pods Manifest.lock */,
 				AC39C3B618D72A6F00B38212 /* Sources */,
 				AC39C3B718D72A6F00B38212 /* Frameworks */,
 				AC39C3B818D72A6F00B38212 /* Resources */,
+				40F0EAE1A87540AD867BD34A /* Copy Pods Resources */,
+				51C4CEF319230486009E6042 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -205,6 +252,7 @@
 				ORGANIZATIONNAME = com.estimote;
 				TargetAttributes = {
 					AC39C3B918D72A6F00B38212 = {
+						DevelopmentTeam = M6TJK4GHCY;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -254,6 +302,52 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05D8ECFE3A2B4B83A36C5366 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		40F0EAE1A87540AD867BD34A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51C4CEF319230486009E6042 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "env > ./env.txt";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC39C3B618D72A6F00B38212 /* Sources */ = {
@@ -323,6 +417,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: mayuko hirono (2939VZM36G)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -361,6 +456,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: mayuko hirono (2939VZM36G)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -379,38 +475,104 @@
 		};
 		AC39C3ED18D72A6F00B38212 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881698037D044D79882430C0 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: jp.co.garage.estimote";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Examples/Examples-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../EstimoteSDK/Headers",
+					"<Multiple",
+					"values>",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					../EstimoteSDK/Headers,
 				);
 				INFOPLIST_FILE = "Examples/Examples-Info.plist";
-				LIBRARY_SEARCH_PATHS = ../EstimoteSDK;
+				LIBRARY_SEARCH_PATHS = (
+					../EstimoteSDK,
+					"\"$(SRCROOT)/../EstimoteSDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lEstimoteSDK",
+					"-framework",
+					Accelerate,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					Foundation,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					UIKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "500142E0-EC14-4BF2-B1CE-EFB56E3F4BCE";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		AC39C3EE18D72A6F00B38212 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881698037D044D79882430C0 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: jp.co.garage.estimote";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Examples/Examples-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					../EstimoteSDK/Headers,
+					"$(SRCROOT)/../EstimoteSDK/Headers",
+					"<Multiple",
+					"values>",
 				);
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/../EstimoteSDK/Headers";
 				INFOPLIST_FILE = "Examples/Examples-Info.plist";
-				LIBRARY_SEARCH_PATHS = ../EstimoteSDK;
+				LIBRARY_SEARCH_PATHS = (
+					../EstimoteSDK,
+					"\"$(SRCROOT)/../EstimoteSDK\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lEstimoteSDK",
+					"-framework",
+					Accelerate,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					CoreLocation,
+					"-framework",
+					Foundation,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					QuartzCore,
+					"-framework",
+					SystemConfiguration,
+					"-framework",
+					UIKit,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "500142E0-EC14-4BF2-B1CE-EFB56E3F4BCE";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

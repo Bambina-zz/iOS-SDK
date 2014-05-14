@@ -8,6 +8,7 @@
 
 #import "ESTProximityDemoVC.h"
 #import "ESTBeaconManager.h"
+#import <Parse/Parse.h>
 
 @interface ESTProximityDemoVC () <ESTBeaconManagerDelegate>
 
@@ -40,7 +41,7 @@
      * UI setup.
      */
     self.view.backgroundColor = [UIColor whiteColor];
-    
+
     self.zoneLabel = [[UILabel alloc] initWithFrame:CGRectMake(0,
                                                                100,
                                                                self.view.frame.size.width,
@@ -85,10 +86,18 @@
         
         self.zoneLabel.text     = [self textForProximity:firstBeacon.proximity];
         self.imageView.image    = [self imageForProximity:firstBeacon.proximity];
+
+        // Create our Installation query
+        PFQuery *pushQuery = [PFInstallation query];
+        [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
+        
+        // Send push notification to query
+        [PFPush sendPushMessageToQueryInBackground:pushQuery
+                                       withMessage:self.zoneLabel.text];
     }
 }
 
-#pragma mark - 
+#pragma mark -
 
 - (NSString *)textForProximity:(CLProximity)proximity
 {
@@ -102,7 +111,6 @@
         case CLProximityImmediate:
             return @"Immediate";
             break;
-            
         default:
             return @"Unknown";
             break;

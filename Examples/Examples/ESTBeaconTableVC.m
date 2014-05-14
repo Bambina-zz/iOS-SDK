@@ -9,6 +9,7 @@
 #import "ESTBeaconTableVC.h"
 #import "ESTBeaconManager.h"
 #import "ESTViewController.h"
+#import <Parse/Parse.h>
 
 @interface ESTBeaconTableVC () <ESTBeaconManagerDelegate>
 
@@ -107,7 +108,15 @@
     self.beaconsArray = beacons;
     
     [self.tableView reloadData];
+    // Create our Installation query
+    PFQuery *pushQuery = [PFInstallation query];
+    [pushQuery whereKey:@"deviceType" equalTo:@"ios"];
+    
+    // Send push notification to query
+    [PFPush sendPushMessageToQueryInBackground:pushQuery
+                                   withMessage:@"Find Beacon"];
 }
+
 
 #pragma mark - Table view data source
 
